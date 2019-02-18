@@ -62,6 +62,8 @@ else
     pip3 install seaborn
     pip3 install folium
 
+    set -x SLUGIFY_USES_TEXT_UNIDECODE yes
+    pip3 install --upgrade setuptools
     pip install apache-airflow[redis, celery, postgres, s3]
 
 
